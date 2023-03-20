@@ -6,7 +6,7 @@ let url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${
 
 request(url, function (err, response, body) {
 if(err){
-    console.log('error:', error);
+    console.log('error:', err);
 } else {
     console.log('body:', body);
 }
